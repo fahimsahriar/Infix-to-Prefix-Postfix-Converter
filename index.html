@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Infix to Prefix/Postfix Converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="conatiner mx-auto">
+		<div class="row">
+			<div class="col-md">
+				<h3 class="text-center" >Infix to Prefix/Postfix Converter</h3>
+				<hr style="width:50%;text-align:center;">
+				<p class="text-center"><strong id="converter" style="color: rgb(42 51 165);">Infix to Prefix</strong></p>
+                <div class="input_sec">
+                    <form class="form-group text-center" id="frm1">
+                        <input 
+                        id="in_fo" 
+                        class="" 
+                        type="text"
+                        placeholder="Enter infix expression" 
+                        name=""
+                        >
+                        <input type="button" onclick="my_main_function()" value="Submit">
+                    </form>
+					<form>
+						<input type="file" id="upl">
+						<input type="button" style="background-color: burlywood;" class="btn" id="up_b" value="upload" onclick="my_main_function()">
+					</form>
+                </div>
+				<div style="text-align:center">
+				    <button type="button" id="Change" class="btn btn-secondary">Change</button>
+                    <button type="button" id="input_method" class="btn btn-secondary"><span id="input_m_text">Read .txt File</span></button>
+                    <button type="button" id="reset" class="btn btn-primary">Reset</button>
+				</div>
+			</div>	
+		</div>
+		<hr style="width:50%;text-align:center;">
+		<div class="card mx-auto" style="width: 18rem;">
+		  <ul class="list-group list-group-flush">
+		    <li class="list-group-item " ><strong id="1st_h"><span id="pub">Result:</span></strong><span id="1st_result"></span></li>
+		  </ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="required.js"></script>
+</body>
+</html>
